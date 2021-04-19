@@ -2,6 +2,11 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import { Link } from "react-router-dom";
+import Logo from "./../images/logoAPP.png";
 
 const Navbar = () => {
   function animation() {
@@ -43,8 +48,29 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
-        ReteBio
+        <img src={Logo} alt="Logo" height="40px" width="auto" />
       </NavLink>
+      <div className="leftTopHeader">
+        <ul className="list">
+          <div>
+            <li>
+              <Link className="fb" to="/">
+                <FacebookIcon />
+              </Link>
+            </li>
+            <li>
+              <Link className="ig" to="/">
+                <InstagramIcon />
+              </Link>
+            </li>
+            <li>
+              <Link className="tw" to="/">
+                <TwitterIcon />{" "}
+              </Link>
+            </li>
+          </div>
+        </ul>
+      </div>
 
       <button
         className="navbar-toggler"

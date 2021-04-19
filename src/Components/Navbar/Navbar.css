@@ -20,7 +20,7 @@ i {
 }
 
 .navbar-mainbg {
-  background-color: #000000;
+  background-color: #ee7777;
   padding: 0px;
 }
 #navbarSupportedContent {
@@ -43,7 +43,7 @@ i {
   text-decoration: none;
   font-size: 15px;
   display: block;
-  padding: 20px 20px;
+  padding: 24px 20px;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   position: relative;
@@ -84,7 +84,7 @@ i {
   background-color: #fff;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .hori-selector .right,
 .hori-selector .left {
@@ -107,7 +107,7 @@ i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #ee7777;
 }
 .hori-selector .right:before {
   bottom: 0;
@@ -149,4 +149,62 @@ i {
     bottom: -25px;
     left: -25px;
   }
+  .leftTopHeader {
+    float: left;
+    color: #b1804a;
+    text-decoration: none;
+    -webkit-transition: color 300ms;
+    transition: color 300ms;
+    margin-top: 12px;
+  }
+}
+
+/* icons and buttons */
+.leftTopHeader {
+  float: left;
+  color: #b1804a;
+  text-decoration: none;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+  margin-top: 12px;
+}
+
+.ig {
+  color: #e1306c;
+  margin: 5px;
+}
+
+.fb {
+  color: rgb(45, 72, 189);
+  margin: 5px;
+}
+
+.tw {
+  color: #00acee;
+  margin: 5px;
+}
+ul li {
+  display: inline;
+  list-style: none;
+}
+
+.rightTopHeader {
+  float: right;
+  color: #b1804a;
+  margin-top: 8px;
+}
+
+.buttonTHeader :hover {
+  color: #b1804a;
+  border-radius: 5px;
+  border: none;
+}
+
+.text-link {
+  line-height: 36px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: inherit;
+  text-decoration: none;
 }
